@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CredenciaisDTO } from '../model/CredenciaisDTO';
 import { Usuario } from '../model/Usuario';
-import { UsuarioDTO } from '../model/UsuarioDTO';
 
 @Injectable({
   providedIn: 'root'
@@ -14,8 +13,8 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
-  login(usuarioLogin: UsuarioDTO): Observable<UsuarioDTO>{
-    return this.http.put<UsuarioDTO>('http://localhost:8080/usuarios/login', usuarioLogin)
+  login(credenciais: CredenciaisDTO): Observable<CredenciaisDTO>{
+    return this.http.put<CredenciaisDTO>('http://localhost:8080/usuarios/login', credenciais)
   }
 
   signup(usuario: Usuario): Observable<Usuario>{
