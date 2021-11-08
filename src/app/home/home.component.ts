@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  name = environment.name
+
   constructor(
     private router: Router
   ) { }
