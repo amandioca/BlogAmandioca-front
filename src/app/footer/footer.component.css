@@ -8,6 +8,10 @@ ul.social-network li{
     padding: 5px;
 }
 
+.bg-black{
+    background-color: black;
+}
+
 .fa{
     font-size: 35pt;
     color: white;
