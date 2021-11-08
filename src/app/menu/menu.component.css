@@ -1,5 +1,14 @@
+.bg-black{
+    background-color: rgb(0, 0, 0);
+}
+
 .fs-16{
     font-size: 16pt;
+}
+
+.mx-15{
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 a{
