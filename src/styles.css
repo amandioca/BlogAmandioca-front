@@ -3,3 +3,37 @@
 html{
     scroll-behavior: smooth;
 }
+
+.bg-black{
+    background-color: #000000;
+}
+
+.bg-neon-blue{
+    background: rgb(0, 225, 255);
+    color: white;
+}
+
+.bg-neon-purple{
+    background: #b71bef;
+    color: white;
+}
+
+.color-neon-blue{
+    color: rgb(0, 225, 255);
+}
+
+.color-neon-purple{
+    color: #b71bef;
+}
+
+.fs-54{
+    font-size: 54pt;
+}
+
+.fs-24{
+    font-size: 24pt;
+}
+
+.fs-18{
+    font-size: 18pt;
+}
