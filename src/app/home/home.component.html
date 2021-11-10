@@ -5,19 +5,27 @@
 
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6 text-white">
-                    <h5 class="fs-24 mb-0">welcome back,</h5>
-
-                    <h1 class="fs-54 font-weight-bolder">{{name}}!</h1>
-
-                    <h5 class="fs-18">express your opinions, thoughts and ideas here!</h5>
+                    <h5 class="fs-24 mb-0">
+                    welcome back,</h5>
+                    
+                    <h1 class="fs-54 font-weight-bolder">
+                    {{name}}!</h1>
+                    
+                    <h5 class="fs-18">
+                    express your opinions, thoughts and ideas here!</h5>
                 </div>
             </div>
 
             <div class="row d-flex justify-content-center mt-3 mb-5">
                 <div class="col-md-6">
-                    <button class="btn btn-light mr-2" > new post</button>
+                    <button class="btn btn-light mr-2" 
+                    data-toggle="modal" 
+                    data-target="#newPosts"> 
+                    new post</button>
 
-                    <a class="btn btn-outline-light" href=""> view</a>
+                    <a class="btn btn-outline-light" 
+                    href="#posts"> 
+                    view</a>
                 </div>
             </div>
         </div>
@@ -29,5 +37,60 @@
             width="500px"
             height="500px">
         </div>
+    </div>
+</div>
+
+<div class="container mb-5 mt-5" id="posts">
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center font-weight-bold" 
+        id="nav-tab" 
+        role="tablist">
+            <a class="nav-link active text-secondary"
+            id="nav-home-tab" 
+            data-toggle="tab" 
+            href="#allPosts" 
+            role="tab" 
+            aria-controls="nav-allPosts" 
+            aria-selected="true">
+            all posts</a>
+
+            <a class="nav-link text-secondary font-weight-bold" 
+            id="nav-profile-tab"
+            data-toggle="tab" 
+            href="#myPosts" 
+            role="tab" 
+            aria-controls="nav-myPosts" 
+            aria-selected="false">
+            my posts</a>
+
+            <a class="nav-link text-secondary font-weight-bold" 
+            id="nav-contact-tab" 
+            data-toggle="tab" 
+            href="#byTheme" 
+            role="tab" 
+            aria-controls="nav-byTheme" 
+            aria-selected="false">
+            by theme</a>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" 
+        id="nav-allPosts" 
+        role="tabpanel" 
+        aria-labelledby="nav-allPosts-tab">
+        all posts</div>
+
+        <div class="tab-pane fade" 
+        id="nav-myPosts" 
+        role="tabpanel" 
+        aria-labelledby="nav-myPosts-tab">
+        my posts</div>
+
+        <div class="tab-pane fade" 
+        id="nav-byTheme" 
+        role="tabpanel" 
+        aria-labelledby="nav-byTheme-tab">
+        posts by theme</div>
     </div>
 </div>
