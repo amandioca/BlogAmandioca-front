@@ -21,9 +21,9 @@ export class MenuComponent implements OnInit {
 
   out() {
     this.router.navigate(['/login'])
-    environment.id
-    environment.name
-    environment.photo
-    environment.token
+    environment.id = 0
+    environment.name = ''
+    environment.photo = ''
+    environment.token = ''
   }
 }
