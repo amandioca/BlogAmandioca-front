@@ -99,14 +99,14 @@
 <div class="modal fade" 
 id="newPosts" 
 tabindex="-1" 
-aria-labelledby="exampleModalLabel" 
+aria-labelledby="modalCreatePost" 
 aria-hidden="true">
 
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             
-            <div class="modal-header d-flex align-content-center">
-                <h5 class="modal-title" id="exampleModalLabel">
+            <div class="modal-header">
+                <h5 class="modal-title d-flex align-items-center" id="modalCreatePost">
                 create post</h5>
 
                 <button type="button" 
@@ -131,7 +131,7 @@ aria-hidden="true">
 
                 <div class="form-group">
                     <label for="theme">choose a theme or 
-                        <a href="">
+                        <a data-dismiss="modal" routerLink='/theme'>
                         register a new theme</a>
                         : </label>
 
