@@ -15,11 +15,11 @@ export class AuthService {
   ) { }
 
   login(credenciais: CredenciaisDTO): Observable<CredenciaisDTO>{
-    return this.http.put<CredenciaisDTO>('http://localhost:8080/usuarios/login', credenciais)
+    return this.http.put<CredenciaisDTO>('https://amandioca.herokuapp.com/usuarios/login', credenciais)
   }
 
   signup(usuario: Usuario): Observable<Usuario>{
-    return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastro', usuario)
+    return this.http.post<Usuario>('https://amandioca.herokuapp.com/usuarios/cadastro', usuario)
   }
 
   logged() {
