@@ -1,4 +1,3 @@
-import { Tema } from './../model/Tema';
 import { Observable } from 'rxjs';
 import { environment } from './../../environments/environment.prod';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -16,6 +15,12 @@ export class ThemeService {
 
     token = {
       headers: new HttpHeaders().set('Authorization', environment.token)
+    }
+
+    refreshToken(){
+      this.token = {
+        headers: new HttpHeaders().set('Authorization', environment.token)
+      }
     }
 
     getAllTheme(): Observable<Tema[]>{
