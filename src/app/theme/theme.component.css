@@ -1,0 +1,11 @@
+.table-dark td, .table-dark th, .table-dark thead th {
+    border: none !important;
+}
+
+.bg-black{
+    background-color: black !important;
+}
+
+.br-25{
+    border-radius: .50rem;
+}
