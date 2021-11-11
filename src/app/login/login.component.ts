@@ -30,6 +30,14 @@ export class LoginComponent implements OnInit {
       environment.token = this.credenciais.token
       environment.name = this.credenciais.nome
       environment.photo = this.credenciais.foto
+      
+      /*console.log(environment.id)
+      console.log(environment.token)
+      console.log(environment.name)
+      console.log(environment.photo)
+      
+      concole.log(this.credenciais)*/
+
 
       this.router.navigate(['/home'])
     }, error =>{
