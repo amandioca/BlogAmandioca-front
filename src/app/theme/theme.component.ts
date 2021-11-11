@@ -15,9 +15,9 @@ export class ThemeComponent implements OnInit {
 
   ngOnInit() {
 
-    /*if(environment.token == ''){
+    if(environment.token == ''){
       alert('Your session has expired! Login again')
       this.router.navigate(['/login'])
-    }*/
+    }
   }
 }
