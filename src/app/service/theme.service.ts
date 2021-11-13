@@ -24,7 +24,7 @@ export class ThemeService {
     }
 
     getAllTheme(): Observable<Tema[]>{
-      return this.http.get<Tema[]>('https://amandioca.herokuapp.com/temas')
+      return this.http.get<Tema[]>('https://amandioca.herokuapp.com/temas', this.token)
     }
 
     postTheme(tema: Tema): Observable<Tema>{
