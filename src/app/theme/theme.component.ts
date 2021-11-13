@@ -20,6 +20,7 @@ export class ThemeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.findAllThemes()
 
     if(environment.token == ''){
       alert('Your session has expired! Login again')
@@ -27,10 +28,17 @@ export class ThemeComponent implements OnInit {
     }
   }
 
+  findAllThemes() {
+    this.themeService.getAllTheme().subscribe((resp: Tema[]) =>{
+      this.listTheme = resp
+    })
+  }
+
   register(){
     this.themeService.postTheme(this.theme).subscribe((resp: Tema) =>{
       this.theme = resp
       alert('registered theme!')
+      this.findAllThemes()
       this.theme = new Tema()
     })
   }
